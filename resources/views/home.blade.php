@@ -1,0 +1,7 @@
+@extends('layout')
+@section('title', 'ReNew | Új élet a notebookoknak')
+@section('content')
+<section class="hero"><div><div class="eyebrow">Felújítva. Újrahasználva. Neked.</div><h1>Jó technika.<br>Jobb döntés.</h1><p>A ReNew válogatott, gyárilag felújított notebookokat kínál. Fedezd fel a megbízható gépeket kedvező áron, tudatosabb választással.</p><a class="btn-renew" href="{{ route('notebooks.index') }}">Notebookok felfedezése →</a></div><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85" alt="Felújított notebook egy letisztult asztalon"></section>
+<div class="stats"><article class="card"><div class="eyebrow">Gondosan válogatva</div><h3>{{ number_format($count,0,',',' ') }} modell az adatbázisban</h3><p class="muted">Átlátható műszaki adatok, hogy könnyű legyen választani.</p></article><article class="card"><div class="eyebrow">Kedvező ár</div><h3>{{ number_format($featured?->price ?? 0,0,',',' ') }} Ft-tól</h3><p class="muted">Minőségi gépek pénztárcabarát árazással.</p></article><article class="card"><div class="eyebrow">Tudatos választás</div><h3>Új élet, kevesebb hulladék</h3><p class="muted">A felújítás meghosszabbítja az eszközök hasznos élettartamát.</p></article></div>
+<h2 class="section-title">Találd meg a következő társad</h2><p class="muted">Szűrj márkára, nézd meg az adatokat, és írj nekünk, ha kérdésed van.</p>
+@endsection
