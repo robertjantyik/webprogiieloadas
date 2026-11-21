@@ -1,0 +1,5 @@
+{
+  "name": "renew-notebook-catalog",
+  "private": true,
+  "description": "Blade-rendered Laravel application; no frontend build dependencies."
+}
